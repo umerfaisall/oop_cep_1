@@ -3,8 +3,8 @@ from car import Car
 import json
 
 class Admin(User):
-    def __init__(self, username, email, password, firstname, lastname, balance, role, address):
-        super().__init__(username, email, password, firstname, lastname, balance, role, address)
+    def __init__(self, username, email, password, firstname, lastname, balance, role, address,rentedcarid):
+        super().__init__(username, email, password, firstname, lastname, balance, role, address,rentedcarid)
         self.balance = None  # Keeping balance as it may be used later
 
     def add_car_to_system(self, car_id, brand, model, seating_capacity, rental_price_per_day, is_available):

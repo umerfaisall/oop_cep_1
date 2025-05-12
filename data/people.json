@@ -1,0 +1,156 @@
+[
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Hafsa123",
+        "Email": "h@g.com",
+        "Password": "1234",
+        "FirstName": "Hafsa",
+        "LastName": "Faisal",
+        "Balance": 8000,
+        "Role": "customer",
+        "Address": "Nazimabad",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha Faisal",
+        "Email": "taha@g.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": "6900",
+        "Role": "Admin",
+        "Address": "Tere Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Ali Faisal",
+        "Email": "ali@gmail.com",
+        "Password": "1214",
+        "FirstName": "Ali",
+        "LastName": "Faisal",
+        "Balance": 10000.0,
+        "Role": "customer",
+        "Address": "N",
+        "RentedCarID": null
+    }
+]

@@ -98,11 +98,14 @@ def main():
                 print("Sign In Successful.")
                 data = Auth().signIN(username, password)
                 user_data = [u for u in LoadData().loadData() if u['Username'] == username][0]
-                if user_data["Role"].lower() == "admin":
-                    admin = Admin(**user_data)
+                normalized_data = {k.lower():v for k,v in user_data.items()}
+                # print(normalized_data)
+                # print(user_data)
+                if normalized_data["role"].lower() == "admin":
+                    admin = Admin(**normalized_data)
                     admin_menu(admin)
                 else:
-                    user = User(**user_data)
+                    user = User(**normalized_data)
                     customer_menu(user)
             else:
                 print("Invalid credentials.")
