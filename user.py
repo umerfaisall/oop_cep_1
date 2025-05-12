@@ -1,7 +1,8 @@
 import json
 from car import Car
+import os
 class User:
-    def __init__(self,username,email,password,firstname,lastname,balance,role,address):
+    def __init__(self,username,email,password,firstname,lastname,balance,role,address,rentedcarid = None):
         self.username = username
         self.email = email
         self.password = password
@@ -11,7 +12,7 @@ class User:
         self.role = role
         self.address = address
 ##################3 Umers part ################
-        self.rented_car_id = None
+        self.rented_car_id = rentedcarid
         
     def to_dict(self):
             return {
@@ -29,7 +30,7 @@ class User:
             try:
                 with open('data/'+fileName,'r') as f:
                     data = json.load(f)
-            except FileNotFoundError:
+            except (FileNotFoundError,json.JSONDecodeError):
                 data = []
             data.append(self.to_dict())
             with open('data/'+fileName,'w') as f:
@@ -46,5 +47,5 @@ class User:
 
     def return_car(self):
         self.rented_car_id = None
-# person1 = User('Taha Faisal','taha@g.com','3675','Taha','Faisal','6900','Admin','Tere Ghar')
-# person1.save_to_JSON('data/people.json')
+person1 = User('Taha Faisal','taha@g.com','3675','Taha','Faisal','6900','Admin','Tere Ghar')
+person1.save_to_JSON('people.json')
