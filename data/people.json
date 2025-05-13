@@ -21,7 +21,7 @@
         "Address": "admin ka ghar",
         "RentedCarID": null
     },
-     {
+    {
         "Username": "admin1234",
         "Email": "admin@gmail.com",
         "Password": "admin1234",
@@ -30,6 +30,17 @@
         "Balance": null,
         "Role": "Admin",
         "Address": "admin ka ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "aayanali",
+        "Email": "chaman",
+        "Password": "lodulalit",
+        "FirstName": "aayan",
+        "LastName": "ali",
+        "Balance": 25000.0,
+        "Role": "customer",
+        "Address": "sir shahab ka ghar",
         "RentedCarID": null
     }
 ]
