@@ -12,8 +12,10 @@ class User:
         self.role = role
         self.address = address
 ##################3 Umers part ################
-        self.rented_car_id = rentedcarid
-        
+        if rentedcarid == "null" or rentedcarid is None:
+                    self.rented_car_id = None
+        else:
+                    self.rented_car_id = rentedcarid
     def to_dict(self):
             return {
                 'Username':self.username,
@@ -47,5 +49,3 @@ class User:
 
     def return_car(self):
         self.rented_car_id = None
-person1 = User('Taha Faisal','taha@g.com','3675','Taha','Faisal','6900','Admin','Tere Ghar')
-person1.save_to_JSON('people.json')

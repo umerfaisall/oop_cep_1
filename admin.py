@@ -23,7 +23,7 @@ class Admin(User):
             'Brand': brand,
             'Model': model,
             'SeatingCapacity': seating_capacity,
-            'RentalPricePerDay': rental_price_per_day,
+            'Rental Price': rental_price_per_day,
             'Available': is_available
         }
         data.append(new_car)
@@ -70,9 +70,4 @@ class Admin(User):
                 return data
         except FileNotFoundError:
             print("File Not Found!!")
-            
-
-# Example usage
-# a1 = Admin('Ali', 'a@gmail.com', '1719', 'Ali', 'Faisal', 0, 'Admin', 'Germany')
-# print(a1.print_rental_history())
 

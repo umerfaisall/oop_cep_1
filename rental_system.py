@@ -3,6 +3,7 @@ from car import Car
 import json
 import os
 from datetime import datetime
+from fileLoad import LoadData
 class Rental_System:
     def __init__(self):
         self.users={}
@@ -14,7 +15,42 @@ class Rental_System:
         
     def add_user(self,user:User):
         self.users[user.username]=user
-        
+    
+    import json
+
+    def save_users_to_file(self, file_path="data/people.json"):
+        data = []
+        for user in self.users.values():
+            data.append({
+                "Username": user.username,
+                "Email": user.email,
+                "Password": user.password,
+                "firstName": user.firstName,
+                "LastName": user.lastName,
+                "Balance": user.balance,
+                "Role": user.role,
+                "Address": user.address,
+                "RentedCarID": user.rented_car_id
+            })
+        with open(file_path, "w") as f:
+            json.dump(data, f, indent=4)
+
+    def save_cars_to_file(self, file_path="data/cars.json"):
+        data = []
+        for car in self.cars.values():
+            data.append({
+                "carID": car.car_id,
+                "Brand": car.brand,
+                "Model": car.model,
+                "SeatingCapacity": car.seatingCapacity,
+                "Rental Price": car.rentalPricePerDay,
+                "Available": car.isAvailable
+            })
+        with open(file_path, "w") as f:
+            json.dump(data, f, indent=4)
+
+    
+    
     def reserve_car(self,username, car_id, start_date,end_date):
         if username not in self.users:
             return f'{username} not found!'
@@ -71,26 +107,35 @@ class Rental_System:
        # Mark the car as rented and update user record
         user.rent_a_car(car_id)  # Save car ID to user
         car.markRented()         # Set availability to False
-        
+        self.save_users_to_file()
+        self.save_cars_to_file()
+
+        LoadData().update_user_rented_car(username, car_id)
+        LoadData().update_car_availability(car_id, False)
         print(f"Car '{car.model}' reserved successfully for Rs:{total_cost}")
         return True
+
     
     def return_car(self, username):
         if username not in self.users:                   # Check if user exists
             return f'{username} not found!'
-        user=self.users[username]
+        user = self.users[username]
         if not user.has_rented_a_car():                  # Check if user has an active rental
             return f'The user has not rented any car yet!'
         
         # Get the car ID and object
-        car_id=user.rented_car_id
-        car=self.cars.get(car_id)
+        car_id = user.rented_car_id
+        car = self.cars.get(car_id)
         
         if car:
             car.markAvailable()                           # Mark car available if it exists
         user.return_car()                                 # Remove rental from user's record
+        LoadData().update_user_rented_car(username, car_id)  # Update user data
+        LoadData().update_car_availability(car_id, True)  # Update car availability
+        self.save_users_to_file()
+        self.save_cars_to_file()
         return f'{username} returned the car with Car ID: {car_id}'
-   
+
     def save_rental_history(self, file_name='rental_history.json'):
         file_path = f"data/{file_name}"
         
@@ -141,21 +186,4 @@ class Rental_System:
 
         if not user_history:
             return f"No rental history found for user '{username}'."
-
-    
-
         return user_history
-            
-
-
-system2 = Rental_System()
-faisal = User("faisal", "umer@mail.com", "pass", "Umer", "Ali", 50000, "customer", "Lahore")
-system2.add_user(faisal)
-toyota = Car("car002", "Toyota", "Corolla", 4, 2500, True)
-system2.add_car(toyota)
-start = datetime(2025, 5, 6)
-end = datetime(2025, 5, 9)  # 3 days
-system2.reserve_car("faisal", "car002", start, end)
-print(f"\nRemaining balance: ${faisal.balance}")
-system2.save_rental_history()
-print(system2.view_user_rental_history("faisal"))
