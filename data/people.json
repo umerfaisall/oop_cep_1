@@ -17,7 +17,18 @@
         "FirstName": "admin ",
         "LastName": "123",
         "Balance": null,
-        "Role": "admin",
+        "Role": "Admin",
+        "Address": "admin ka ghar",
+        "RentedCarID": null
+    },
+     {
+        "Username": "admin1234",
+        "Email": "admin@gmail.com",
+        "Password": "admin1234",
+        "FirstName": "admin ",
+        "LastName": "123",
+        "Balance": null,
+        "Role": "Admin",
         "Address": "admin ka ghar",
         "RentedCarID": null
     }
