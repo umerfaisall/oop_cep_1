@@ -114,8 +114,19 @@ class Rental_System:
         LoadData().update_car_availability(car_id, False)
         print(f"Car '{car.model}' reserved successfully for Rs:{total_cost}")
         return True
+        
+    def add_balance(self, username, amount):
+        if username not in self.users:
+            raise ValueError(f"User '{username}' not found.")
+        if amount <= 0:
+            raise ValueError("Amount must be greater than 0.")
+        
+        user = self.users[username]
+        user.balance += amount
+        self.save_users_to_file()
+        return f"Rs {amount} added successfully. New balance: Rs {user.balance}"
 
-    
+
     def return_car(self, username):
         if username not in self.users:                   # Check if user exists
             return f'{username} not found!'

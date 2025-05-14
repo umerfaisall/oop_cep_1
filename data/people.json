@@ -5,42 +5,20 @@
         "Password": "umer1234",
         "firstName": "umer",
         "LastName": "faisal",
-        "Balance": 14400.02,
+        "Balance": 2008400.02,
         "Role": "customer",
         "Address": "susraal",
-        "RentedCarID": "car005"
+        "RentedCarID": null
     },
     {
         "Username": "admin123",
-        "Email": "admin@gmail.com",
+        "Email": "adminbkl@gmail.com",
         "Password": "admin123",
-        "FirstName": "admin ",
-        "LastName": "123",
+        "FirstName": "admin",
+        "LastName": "lulla",
         "Balance": null,
-        "Role": "Admin",
-        "Address": "admin ka ghar",
-        "RentedCarID": null
-    },
-    {
-        "Username": "admin1234",
-        "Email": "admin@gmail.com",
-        "Password": "admin1234",
-        "FirstName": "admin ",
-        "LastName": "123",
-        "Balance": null,
-        "Role": "Admin",
-        "Address": "admin ka ghar",
-        "RentedCarID": null
-    },
-    {
-        "Username": "aayanali",
-        "Email": "chaman",
-        "Password": "lodulalit",
-        "FirstName": "aayan",
-        "LastName": "ali",
-        "Balance": 25000.0,
-        "Role": "customer",
-        "Address": "sir shahab ka ghar",
+        "Role": "admin",
+        "Address": "majlis",
         "RentedCarID": null
     }
 ]

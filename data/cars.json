@@ -37,6 +37,6 @@
         "Model": "mehran",
         "SeatingCapacity": 4,
         "Rental Price": 799.99,
-        "Available": false
+        "Available": true
     }
 ]

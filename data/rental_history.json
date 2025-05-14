@@ -42,5 +42,49 @@
         "end_date": "2025-05-15",
         "total_days": 2,
         "total_cost": 1599.98
+    },
+    {
+        "username": "umerfaisal",
+        "email": "umer123",
+        "car_id": "car001",
+        "brand": "Honda",
+        "model": "Civic",
+        "start_date": "2025-05-14",
+        "end_date": "2025-05-15",
+        "total_days": 1,
+        "total_cost": 2500
+    },
+    {
+        "username": "umerfaisal",
+        "email": "umer123",
+        "car_id": "car001",
+        "brand": "Honda",
+        "model": "Civic",
+        "start_date": "2025-05-14",
+        "end_date": "2025-05-16",
+        "total_days": 2,
+        "total_cost": 5000
+    },
+    {
+        "username": "umerfaisal",
+        "email": "umer123",
+        "car_id": "car001",
+        "brand": "Honda",
+        "model": "Civic",
+        "start_date": "2025-05-14",
+        "end_date": "2025-05-17",
+        "total_days": 3,
+        "total_cost": 7500
+    },
+    {
+        "username": "umerfaisal",
+        "email": "umer123",
+        "car_id": "car002",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "start_date": "2025-05-14",
+        "end_date": "2025-05-15",
+        "total_days": 1,
+        "total_cost": 2000
     }
 ]
