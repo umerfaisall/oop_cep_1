@@ -20,5 +20,27 @@
         "Role": "admin",
         "Address": "majlis",
         "RentedCarID": null
+    },
+    {
+        "Username": "TahaFaisal12345",
+        "Email": "faisaltaha268@gmail.com",
+        "Password": "3675",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": null,
+        "Role": "admin",
+        "Address": "Apne Ghar",
+        "RentedCarID": null
+    },
+    {
+        "Username": "Taha69",
+        "Email": "f@g.com",
+        "Password": "1234",
+        "FirstName": "Taha",
+        "LastName": "Faisal",
+        "Balance": 300.0,
+        "Role": "customer",
+        "Address": "Nazimabad Ao",
+        "RentedCarID": null
     }
 ]

@@ -4,6 +4,8 @@ import json
 import os
 from datetime import datetime
 from fileLoad import LoadData
+from PaymentMethod import CreditCard
+from PaymentMethod import CashPayment
 class Rental_System:
     def __init__(self):
         self.users={}
@@ -118,13 +120,24 @@ class Rental_System:
     def add_balance(self, username, amount):
         if username not in self.users:
             raise ValueError(f"User '{username}' not found.")
-        if amount <= 0:
-            raise ValueError("Amount must be greater than 0.")
-        
-        user = self.users[username]
-        user.balance += amount
-        self.save_users_to_file()
-        return f"Rs {amount} added successfully. New balance: Rs {user.balance}"
+        # if amount <= 0:
+        #     raise ValueError("Amount must be greater than 0.")
+        user = self.user[username]
+        print('1) Add Balance From a Credit Card')
+        print('2) Add Balance Through Cash')
+        options = input()
+        if options == '1':
+            card = CreditCard()
+            card.collect_payment_details()
+            card.process_payment(amount)
+        elif options == '2':
+            cash = CashPayment()
+            cash.collect_payment_details()
+            cash.process_payment(amount)
+        # user = self.users[username]
+        # user.balance += amount
+        # self.save_users_to_file()
+        # return f"Rs {amount} added successfully. New balance: Rs {user.balance}"
 
 
     def return_car(self, username):
