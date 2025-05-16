@@ -16,7 +16,7 @@ class Auth:
             print(f" Error: Missing expected field in data - {e}")
         except Exception as e:
             print(f" An unexpected error occurred: {e}")
-    def signUP(self,username,email,password,firstName,lastName,balance,role,address):
+    def signUP(self, username, email, password, firstName, lastName, balance=None, role=None, address=None):
         try:
             data = LoadData()
             users = data.loadData()
@@ -39,7 +39,3 @@ class Auth:
         except Exception as e:
             print(f"An unexpected error occurred during sign-up: {e}")
             return False
-a = Auth()
-print(a.signIN('Taha Faisal','3675'))
-b = Auth()
-print(b.signUP('Hafsa123','h@g.com','1234','Hafsa','Faisal',8000,'customer','Nazimabad'))

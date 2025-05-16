@@ -8,75 +8,35 @@
         "Available": true
     },
     {
-        "carID": "car001",
-        "Brand": "Honda",
-        "Model": "Civic",
-        "SeatingCapacity": 4,
-        "Rental Price": 2500,
-        "Available": true
-    },
-    {
-        "carID": "car001",
-        "Brand": "Honda",
-        "Model": "Civic",
-        "SeatingCapacity": 4,
-        "Rental Price": 2500,
-        "Available": true
-    },
-    {
         "carID": "car002",
         "Brand": "Toyota",
         "Model": "Corolla",
         "SeatingCapacity": 4,
         "Rental Price": 2000,
-        "Available": false
-    },
-    {
-        "carID": "car001",
-        "Brand": "Honda",
-        "Model": "Civic",
-        "SeatingCapacity": 4,
-        "Rental Price": 2500,
         "Available": true
     },
     {
-        "carID": "car002",
-        "Brand": "Toyota",
-        "Model": "Corolla",
-        "SeatingCapacity": 4,
-        "Rental Price": 2000,
-        "Available": false
-    },
-    {
-        "carID": "car001",
-        "Brand": "Honda",
-        "Model": "Civic",
-        "SeatingCapacity": 4,
-        "Rental Price": 2500,
+        "carID": "car003",
+        "Brand": "suzuki",
+        "Model": "alto",
+        "SeatingCapacity": 3,
+        "Rental Price": 500,
         "Available": true
     },
     {
-        "carID": "car002",
-        "Brand": "Toyota",
-        "Model": "Corolla",
+        "carID": "car004",
+        "Brand": "suzuki",
+        "Model": "cultus",
         "SeatingCapacity": 4,
-        "Rental Price": 2000,
-        "Available": false
-    },
-    {
-        "carID": "car001",
-        "Brand": "Honda",
-        "Model": "Civic",
-        "SeatingCapacity": 4,
-        "Rental Price": 2500,
+        "Rental Price": 1200.0,
         "Available": true
     },
     {
-        "carID": "car002",
-        "Brand": "Toyota",
-        "Model": "Corolla",
+        "carID": "car005",
+        "Brand": "suzuki",
+        "Model": "mehran",
         "SeatingCapacity": 4,
-        "Rental Price": 2000,
-        "Available": false
+        "Rental Price": 799.99,
+        "Available": true
     }
 ]
