@@ -1,6 +1,5 @@
 from fileLoad import LoadData
 from user import User
-from admin import Admin
 class Auth:
     def signIN(self,username,password):
         try:

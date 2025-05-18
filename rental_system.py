@@ -18,8 +18,6 @@ class Rental_System:
     def add_user(self,user:User):
         self.users[user.username]=user
     
-    import json
-
     def save_users_to_file(self, file_path="data/people.json"):
         data = []
         for user in self.users.values():
@@ -50,8 +48,6 @@ class Rental_System:
             })
         with open(file_path, "w") as f:
             json.dump(data, f, indent=4)
-
-    
     
     def reserve_car(self,username, car_id, start_date,end_date):
         if username not in self.users:
@@ -117,29 +113,41 @@ class Rental_System:
         print(f"Car '{car.model}' reserved successfully for Rs:{total_cost}")
         return True
         
-    def add_balance(self, username, amount):
+    def add_balance(self, username, amount, payment_method=None):
         if username not in self.users:
             raise ValueError(f"User '{username}' not found.")
-        # if amount <= 0:
-        #     raise ValueError("Amount must be greater than 0.")
-        user = self.user[username]
-        print('1) Add Balance From a Credit Card')
-        print('2) Add Balance Through Cash')
-        options = input()
-        if options == '1':
-            card = CreditCard()
-            card.collect_payment_details()
-            card.process_payment(amount)
-        elif options == '2':
-            cash = CashPayment()
-            cash.collect_payment_details()
-            cash.process_payment(amount)
-        # user = self.users[username]
-        # user.balance += amount
-        # self.save_users_to_file()
-        # return f"Rs {amount} added successfully. New balance: Rs {user.balance}"
+        
+        user = self.users[username]
 
+        if payment_method is None:
+            print('1) Add Balance From a Credit Card')
+            print('2) Add Balance Through Cash')
+            choice = input("Enter choice (1 or 2): ").strip()
+            if choice == '1':
+                payment_method = 'Credit Card'
+            elif choice == '2':
+                payment_method = 'Cash'
+            else:
+                raise ValueError("Invalid selection.")
 
+        try:
+            if payment_method == 'Credit Card':
+                card = CreditCard()
+                card.collect_payment_details()
+                card.process_payment(amount)
+            elif payment_method == 'Cash':
+                cash = CashPayment()
+                cash.collect_payment_details()
+                cash.process_payment(amount)
+            else:
+                raise ValueError("Invalid payment method.")
+        except Exception as e:
+            return f"Payment failed: {e}"
+
+        user.balance += amount
+        self.save_users_to_file()
+        return f"Rs {amount} added successfully. New balance: Rs {user.balance:.2f}"  
+    
     def return_car(self, username):
         if username not in self.users:                   # Check if user exists
             return f'{username} not found!'
@@ -187,9 +195,31 @@ class Rental_System:
 
         except Exception as e:
             print(f"Error saving rental history: {e}")
-            
-            
-    def view_user_rental_history(self, username, file_name='rental_history.json'):
+                       
+    # def view_user_rental_history(self, username, file_name='rental_history.json'):
+    #     if username not in self.users:
+    #         return f"User '{username}' not found."
+
+    #     file_path = f"data/{file_name}"
+
+    #     try:
+    #         # Load history from file
+    #         if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
+    #             with open(file_path, "r") as f:
+    #                 full_history = json.load(f)
+    #         else:
+    #             full_history = []
+    #     except Exception as e:
+    #         return  f"Error loading rental history: {e}"
+
+    #     # Filter user's records
+    #     user_history = [record for record in full_history if record["username"] == username]
+
+    #     if not user_history:
+    #         return f"No rental history found for user '{username}'."
+    #     return user_history
+    
+    def __str__(self, username, file_name='rental_history.json'):
         if username not in self.users:
             return f"User '{username}' not found."
 

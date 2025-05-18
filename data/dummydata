@@ -7,7 +7,7 @@
         "LastName": "Faisal",
         "Balance": 500,
         "Role": "customer",
-        "Address": "Gulistan e Johar, Karachi",
+        "Address": "Susraal",
         "RentedCarID": null
     },
     {
@@ -76,5 +76,4 @@
         "Address": "Admin HQ, Karachi",
         "RentedCarID": null
     }
-
 ]

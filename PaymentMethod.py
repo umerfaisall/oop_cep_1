@@ -64,9 +64,9 @@ class CreditCard(PaymentMethod):
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 class CashPayment(PaymentMethod):
-    def collect_payment_details(self,user):
+    def collect_payment_details(self,amount):
         try:
-            self.balance = user.balance
+            self.balance = amount
         except ValueError as e:
             print("User Doesn't exist! ")
     def process_payment(self, amount):

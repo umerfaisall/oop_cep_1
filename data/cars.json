@@ -38,5 +38,85 @@
         "SeatingCapacity": 4,
         "Rental Price": 799.99,
         "Available": true
+    },
+     {
+        "carID": "car006",
+        "Brand": "Toyota",
+        "Model": "Corolla Altis",
+        "SeatingCapacity": 5,
+        "Rental Price": 1299.99,
+        "Available": true
+    },
+    {
+        "carID": "car007",
+        "Brand": "Honda",
+        "Model": "Civic Turbo",
+        "SeatingCapacity": 5,
+        "Rental Price": 1499.99,
+        "Available": false
+    },
+    {
+        "carID": "car008",
+        "Brand": "Hyundai",
+        "Model": "Elantra",
+        "SeatingCapacity": 5,
+        "Rental Price": 1199.00,
+        "Available": true
+    },
+    {
+        "carID": "car009",
+        "Brand": "Kia",
+        "Model": "Sportage",
+        "SeatingCapacity": 5,
+        "Rental Price": 1899.50,
+        "Available": true
+    },
+    {
+        "carID": "car010",
+        "Brand": "Suzuki",
+        "Model": "Cultus VXL",
+        "SeatingCapacity": 4,
+        "Rental Price": 999.99,
+        "Available": false
+    },
+    {
+        "carID": "car011",
+        "Brand": "MG",
+        "Model": "HS",
+        "SeatingCapacity": 5,
+        "Rental Price": 1999.00,
+        "Available": true
+    },
+    {
+        "carID": "car012",
+        "Brand": "Nissan",
+        "Model": "Sunny",
+        "SeatingCapacity": 5,
+        "Rental Price": 1099.75,
+        "Available": true
+    },
+    {
+        "carID": "car013",
+        "Brand": "BMW",
+        "Model": "3 Series",
+        "SeatingCapacity": 5,
+        "Rental Price": 2999.99,
+        "Available": false
+    },
+    {
+        "carID": "car014",
+        "Brand": "Mercedes-Benz",
+        "Model": "C-Class",
+        "SeatingCapacity": 5,
+        "Rental Price": 3499.00,
+        "Available": true
+    },
+    {
+        "carID": "car015",
+        "Brand": "Audi",
+        "Model": "A4",
+        "SeatingCapacity": 5,
+        "Rental Price": 3199.99,
+        "Available": true
     }
 ]
