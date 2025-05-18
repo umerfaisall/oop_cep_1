@@ -1,80 +1,13 @@
 [
     {
-        "Username": "umerfaisal",
-        "Email": "umer123",
-        "Password": "umer1234",
-        "firstName": "Umer",
+        "Username": "TahaFaisal12345",
+        "Email": "faisaltaha268@gmail.com",
+        "Password": "3675",
+        "firstName": "Taha",
         "LastName": "Faisal",
-        "Balance": 500,
+        "Balance": 15000.0,
         "Role": "customer",
-        "Address": "Gulistan e Johar, Karachi",
-        "RentedCarID": null
-    },
-    {
-        "Username": "sana_khan",
-        "Email": "sana.khan01@example.com",
-        "Password": "SanaPass@456",
-        "firstName": "Sana",
-        "LastName": "Khan",
-        "Balance": 750,
-        "Role": "customer",
-        "Address": "Gulshan-e-Iqbal, Karachi",
-        "RentedCarID": "car008"
-    },
-    {
-        "Username": "ahmed_ali92",
-        "Email": "ahmed.ali92@example.com",
-        "Password": "AhmedAli2025",
-        "firstName": "Ahmed",
-        "LastName": "Ali",
-        "Balance": 300,
-        "Role": "customer",
-        "Address": "DHA Phase 6, Lahore",
-        "RentedCarID": null
-    },
-    {
-        "Username": "admin_rentcar",
-        "Email": "admin@rentcar.com",
-        "Password": "Admin@123",
-        "firstName": "Admin",
-        "LastName": "User",
-        "Balance": 0,
-        "Role": "admin",
-        "Address": "Head Office, Islamabad",
-        "RentedCarID": null
-    },
-    {
-        "Username": "fariha.zahid",
-        "Email": "fariha.zahid@example.com",
-        "Password": "Fariha789",
-        "firstName": "Fariha",
-        "LastName": "Zahid",
-        "Balance": 1200,
-        "Role": "customer",
-        "Address": "Model Town, Lahore",
-        "RentedCarID": "car011"
-    },
-    {
-        "Username": "bilal_qasim",
-        "Email": "bilal.qasim99@example.com",
-        "Password": "BilalSecure99",
-        "firstName": "Bilal",
-        "LastName": "Qasim",
-        "Balance": 980,
-        "Role": "customer",
-        "Address": "F-11, Islamabad",
-        "RentedCarID": null
-    },
-    {
-        "Username": "tayyaba_admin",
-        "Email": "tayyaba.admin@rentcar.com",
-        "Password": "TayyabaAdmin@321",
-        "firstName": "Tayyaba",
-        "LastName": "Saleem",
-        "Balance": 0,
-        "Role": "admin",
-        "Address": "Admin HQ, Karachi",
-        "RentedCarID": null
+        "Address": "Nazimabad",
+        "RentedCarID": "car001"
     }
-
 ]

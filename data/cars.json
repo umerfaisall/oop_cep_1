@@ -5,7 +5,7 @@
         "Model": "Civic",
         "SeatingCapacity": 4,
         "Rental Price": 2500,
-        "Available": true
+        "Available": false
     },
     {
         "carID": "car002",
@@ -39,7 +39,7 @@
         "Rental Price": 799.99,
         "Available": true
     },
-     {
+    {
         "carID": "car006",
         "Brand": "Toyota",
         "Model": "Corolla Altis",
@@ -60,7 +60,7 @@
         "Brand": "Hyundai",
         "Model": "Elantra",
         "SeatingCapacity": 5,
-        "Rental Price": 1199.00,
+        "Rental Price": 1199.0,
         "Available": true
     },
     {
@@ -68,7 +68,7 @@
         "Brand": "Kia",
         "Model": "Sportage",
         "SeatingCapacity": 5,
-        "Rental Price": 1899.50,
+        "Rental Price": 1899.5,
         "Available": true
     },
     {
@@ -84,7 +84,7 @@
         "Brand": "MG",
         "Model": "HS",
         "SeatingCapacity": 5,
-        "Rental Price": 1999.00,
+        "Rental Price": 1999.0,
         "Available": true
     },
     {
@@ -108,7 +108,7 @@
         "Brand": "Mercedes-Benz",
         "Model": "C-Class",
         "SeatingCapacity": 5,
-        "Rental Price": 3499.00,
+        "Rental Price": 3499.0,
         "Available": true
     },
     {
