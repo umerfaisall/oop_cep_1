@@ -53,5 +53,27 @@
         "end_date": "2025-05-10",
         "total_days": 5,
         "total_cost": 9497.5
+    },
+    {
+        "username": "TahaFaisal12345",
+        "email": "faisaltaha268@gmail.com",
+        "car_id": "car001",
+        "brand": "Honda",
+        "model": "Civic",
+        "start_date": "2025-05-18",
+        "end_date": "2025-05-19",
+        "total_days": 1,
+        "total_cost": 2500
+    },
+    {
+        "username": "TahaFaisal12345",
+        "email": "faisaltaha268@gmail.com",
+        "car_id": "car001",
+        "brand": "Honda",
+        "model": "Civic",
+        "start_date": "2025-05-18",
+        "end_date": "2025-05-19",
+        "total_days": 1,
+        "total_cost": 2500
     }
 ]
